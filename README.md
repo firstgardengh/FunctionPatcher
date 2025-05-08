@@ -1,6 +1,7 @@
 # FunctionPatcher
 
-This function takes a function's pointer, sets the memory protection to PAGE_READWRITE, casts it to a uintptr_t, sets the value to 0 and reverts the protection.
+This function takes a function's pointer, sets the memory protection to `PAGE_READWRITE`, casts it to a `uintptr_t`, sets the value to `0` and reverts the protection.
+
 
 ```cpp
 uintptr_t original_value;
@@ -24,5 +25,11 @@ void function_patch(void* ctx, bool unpatch = false)
     }
 }
 ```
+
+Parameters:
+`ctx`: A pointer to the function to be patched.
+`unpatch`: A boolean flag indicating whether to unpatch (`true`) or patch (`false`) the function.
+
+
 
 Use case would be for specific functions that promote reverse-engineering.
