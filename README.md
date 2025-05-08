@@ -1,6 +1,7 @@
 # FunctionPatcher
 
 This function takes a function's pointer, sets the memory protection to `PAGE_READWRITE`, casts it to a `uintptr_t`, sets the value to `0` and reverts the protection.
+If the specified function were to be called after this, you'd receive a crash.
 
 
 ```cpp
@@ -35,4 +36,4 @@ Parameters:
 
 
 
-Use case would be for specific functions that promote reverse-engineering.
+Use case would be for blacklisting specific functions that promote reverse-engineering.
