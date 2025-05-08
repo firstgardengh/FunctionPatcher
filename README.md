@@ -26,6 +26,7 @@ void function_patch(void* ctx, bool unpatch = false)
 }
 ```
 
+
 Parameters:
 
 `ctx`: A pointer to the function to be patched.
