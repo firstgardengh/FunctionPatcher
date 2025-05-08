@@ -27,7 +27,7 @@ void function_patch(void* ctx, bool unpatch = false)
 ```
 
 Parameters:
-`ctx`: A pointer to the function to be patched.
+`ctx`: A pointer to the function to be patched.\n
 `unpatch`: A boolean flag indicating whether to unpatch (`true`) or patch (`false`) the function.
 
 
